@@ -2,10 +2,20 @@
 # yarn lockfile v1
 
 
+"3d-tiles-renderer@^0.3.13":
+  version "0.3.18"
+  resolved "https://registry.yarnpkg.com/3d-tiles-renderer/-/3d-tiles-renderer-0.3.18.tgz#30c90e6a7027dcc6c0b4b69a905a61a545eb6139"
+  integrity sha512-aAUjRP9j2IUi0ZQYRdfUN/6Jso6z/cQHX7FMaIP3ZIUMO4H7B/cPsZfs4lrgXCmeONp8RX0PvhoexpSoqKy4QQ==
+
 "@amap/amap-jsapi-types@^0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@amap/amap-jsapi-types/-/amap-jsapi-types-0.0.10.tgz#0e8e69ac8921ed3dde74da209dbb7e04b830debd"
   integrity sha512-znvqLGPBy9NRCr1/3650o9vL1aYl/f1YK0+UGn8lBUvHJXND6uMDJGJsl43cEYglw9/tblwIRxjm4pIotOvSCQ==
+
+"@amap/amap-jsapi-types@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@amap/amap-jsapi-types/-/amap-jsapi-types-0.0.8.tgz#5a807e27f33fe409be4c8ecbde73b8c35c1cb650"
+  integrity sha512-q0FyZDIJcXjsMLGc3oS9rjfJsErOvt9rcp6AgzY4k14vo7bBhdq4eKwoSdVp/pYjR/rfaKBns5v10ycZOFwf/A==
 
 "@babel/parser@^7.16.4":
   version "7.20.5"
@@ -106,6 +116,11 @@
   dependencies:
     "@turf/helpers" "^6.5.0"
 
+"@tweenjs/tween.js@^18.6.4":
+  version "18.6.4"
+  resolved "https://registry.yarnpkg.com/@tweenjs/tween.js/-/tween.js-18.6.4.tgz#40a3d0a93647124872dec8e0fd1bd5926695b6ca"
+  integrity sha512-lB9lMjuqjtuJrx7/kOkqQBtllspPIN+96OvTCeJ2j5FEzinoAXTdAMFnDAQT1KVPRlnYfBrqxtqP66vDM40xxQ==
+
 "@types/eslint@^8.4.5":
   version "8.4.10"
   resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-8.4.10.tgz#19731b9685c19ed1552da7052b6f668ed7eb64bb"
@@ -133,6 +148,18 @@
   version "7.3.13"
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.13.tgz#da4bfd73f49bd541d28920ab0e2bf0ee80f71c91"
   integrity sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==
+
+"@types/three@0.143.0":
+  version "0.143.0"
+  resolved "https://registry.yarnpkg.com/@types/three/-/three-0.143.0.tgz#686f1221c4c89d797713f0533d2f129afcc3572d"
+  integrity sha512-c5PonXOt8xk5q4ygmyjOX4Ec+FA7gwfdcMT/PveE9xrJs/0DDcf2lJkWrhEcmvx2ZefQCQBcogABnGqB0P4OsA==
+  dependencies:
+    "@types/webxr" "*"
+
+"@types/webxr@*":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.2.tgz#5d9627b0ffe223aa3b166de7112ac8a9460dc54f"
+  integrity sha512-szL74BnIcok9m7QwYtVmQ+EdIKwbjPANudfuvDrAF8Cljg9MKUlIoc1w5tjj9PMpeSH3U1Xnx//czQybJ0EfSw==
 
 "@typescript-eslint/eslint-plugin@^5.19.0":
   version "5.46.0"
@@ -384,6 +411,44 @@
     "@turf/intersect" "^6.5.0"
     topojson-client "3.1.0"
 
+"@vuemap/layer-3dtiles@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@vuemap/layer-3dtiles/-/layer-3dtiles-0.0.4.tgz#f94b8b2ae8a63c7f232140ff77672a574bc9dde3"
+  integrity sha512-6jpjXud02KCY5rsICyq5EK4D1VjeNRK0BUZx8Thnf3QzFc6nXVC5fOZN7Jj3JMYlCH2+FYunfkG+/D6s+j6cfw==
+  dependencies:
+    "3d-tiles-renderer" "^0.3.13"
+    lodash-es "^4.17.21"
+    three "0.143.0"
+
+"@vuemap/three-layer@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@vuemap/three-layer/-/three-layer-0.0.5.tgz#799a62e5ade8b64b822fa3671fafd5931b25d623"
+  integrity sha512-ti+Wu/MPxtGK416n6N+gwYazW9xtTCeJYzXeVzOY+VmNpFsVPxIgrBzHr9QNJyoDoN7G0JRJxfzw4sLs+KvPZQ==
+  dependencies:
+    "@amap/amap-jsapi-types" "^0.0.8"
+    "@types/three" "0.143.0"
+    three "0.143.0"
+
+"@vuemap/vue-amap-extra@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@vuemap/vue-amap-extra/-/vue-amap-extra-2.0.3.tgz#9b0d2a7c2d20e4dc64bbd4ef78349098f8835c4b"
+  integrity sha512-KIR+HiIcjfttluRU/XaO+Ov1HsrOPJ9qt5OUOp2Z4rUR5zVURnGppSHt+5o1sp1YE0ZlrlXDP4OxwlDpDuawrw==
+  dependencies:
+    "@tweenjs/tween.js" "^18.6.4"
+    "@vuemap/layer-3dtiles" "^0.0.4"
+    "@vuemap/three-layer" "0.0.5"
+    "@vuemap/vue-amap-util" "2.0.6"
+    color "^4.2.3"
+    lodash-es "^4.17.21"
+    three "0.143.0"
+
+"@vuemap/vue-amap-loca@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@vuemap/vue-amap-loca/-/vue-amap-loca-2.0.5.tgz#2ef54fa03ed517d6bfd951649c6f0fa9c1ff3fe9"
+  integrity sha512-2DFjkD2Z79EUIVltuOFSZJY1Rqk0wzeVIRQXpr/G0M9+lZ3I6T2zBuTbOl4mUBqR3SnGuUI1zsLNHYucmjyaWw==
+  dependencies:
+    "@vuemap/vue-amap-util" "2.0.6"
+
 "@vuemap/vue-amap-util@2.0.6":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/@vuemap/vue-amap-util/-/vue-amap-util-2.0.6.tgz#bbf5946dffa9e304ea05e2838d2eaa274c7ecee1"
@@ -529,10 +594,26 @@ color-convert@^2.0.1:
   dependencies:
     color-name "~1.1.4"
 
-color-name@~1.1.4:
+color-name@^1.0.0, color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+color-string@^1.9.0:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.9.1.tgz#4467f9146f036f855b764dfb5bf8582bf342c7a4"
+  integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
+color@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
+  integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 commander@2:
   version "2.20.3"
@@ -1277,6 +1358,11 @@ internal-slot@^1.0.3:
     has "^1.0.3"
     side-channel "^1.0.4"
 
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
+  integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
+
 is-bigint@^1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/is-bigint/-/is-bigint-1.0.4.tgz#08147a1875bc2b32005d41ccd8291dffc6691df3"
@@ -1784,6 +1870,13 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  integrity sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==
+  dependencies:
+    is-arrayish "^0.3.1"
+
 slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
@@ -1860,6 +1953,11 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
+
+three@0.143.0:
+  version "0.143.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.143.0.tgz#1455bca132cc2b20beb7f41d313e10c29e5ed9df"
+  integrity sha512-oKcAGYHhJ46TGEuHjodo2n6TY2R6lbvrkp+feKZxqsUL/WkH7GKKaeu6RHeyb2Xjfk2dPLRKLsOP0KM2VgT8Zg==
 
 to-regex-range@^5.0.1:
   version "5.0.1"

@@ -10,21 +10,23 @@
 </template>
 
 <script setup>
-import LeftMenu from './components/Menu.vue'
+import LeftMenu from "./components/Menu.vue";
 </script>
 
 <style scoped>
-.main-container{
+.main-container {
   width: 100vw;
   height: 100vh;
   display: flex;
 }
-.left-container{
-  width: 100px;
+
+.left-container {
+  padding: 5px 10px;
   height: 100%;
   overflow: auto;
 }
-.main{
+
+.main {
   flex: 1;
   height: 100%;
 }

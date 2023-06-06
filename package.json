@@ -1,6 +1,6 @@
 {
   "name": "amap-demo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "serve": "vite",
     "build": "vue-tsc && vite build",
@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@vuemap/vue-amap": "^2.0.13",
+    "@vuemap/vue-amap-loca": "^2.0.5",
+    "@vuemap/vue-amap-extra": "^2.0.3",
     "vue": "^3.2.41",
     "vue-router": "^4.1.6"
   },

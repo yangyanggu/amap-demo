@@ -12,6 +12,7 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
     "sourceMap": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
       "@/*": [
@@ -31,7 +32,8 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "node_modules/@vuemap/vue-amap/global.d.ts"
+    "node_modules/@vuemap/vue-amap/global.d.ts",
+    "types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

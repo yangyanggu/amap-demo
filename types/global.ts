@@ -1,0 +1,1 @@
+let AMap: any;

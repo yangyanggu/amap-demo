@@ -13,6 +13,9 @@ module.exports = {
     ecmaVersion: 2020,
     parser: "@typescript-eslint/parser"
   },
+  globals: {
+    AMap: true
+  },
   rules: {
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     "@typescript-eslint/no-explicit-any": ["off"],
